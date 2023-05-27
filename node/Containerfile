@@ -1,0 +1,5 @@
+FROM node:lts-alpine3.17
+
+RUN apk add --no-cache git && \
+npm install --global npm@latest && \
+npm cache clean --force
